@@ -1,0 +1,109 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container {
+    padding: 6px;
+    border: 1px solid black;
+    min-height: 50vh;
+    min-width: 80%;
+    border-radius: 10px;
+
+    /* flex all property */
+    display: flex;
+
+    /* flex-direction: row; */
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    /* flex-direction: column-reverse; */
+
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    /* justify-content: space-between; */
+
+    /* align-items: baseline; */
+    /* align-items: center; */
+    /* align-items: flex-end; */
+    align-items: flex-start;
+}
+
+.itme-2 {
+
+    /* flex: grow, shrink, basis; => second and third optional */
+
+    flex-grow: 1;
+    align-self: center;
+    /* flex-shrink: 1; */
+    /* flex-basis: 1; */
+
+    order: -1;
+    /* order property decided which item appear in which place it takes -1 and 1, -1 means it apper at the first place and 1 is last place */
+}
+
+.itme-5 {
+    align-self: flex-end;
+    order: -1; /* now items-5 appear at the second first position because item-2 also have a -1 order*/
+}
+
+.itme-1 {
+    align-self: stretch;
+}
+
+.flex-item:nth-child(1) {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 10px;
+    height: 30px;
+    background-color: red;
+}
+
+
+
+.flex-item:nth-child(2) {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 10px;
+    height: 30px;
+    background-color: blue;
+}
+
+
+
+.flex-item:nth-child(3) {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 10px;
+    height: 30px;
+    background-color: cyan;
+}
+
+
+
+.flex-item:nth-child(4) {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 10px;
+    height: 30px;
+    background-color: yellow;
+}
+
+
+.flex-item:nth-child(5) {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    height: 30px;
+    background-color: pink;
+}
